@@ -13,6 +13,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+/**********Fonts***************/
 h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -26,8 +27,7 @@ a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: none;
 }
-
-/***Header********/
+/*********Header********/
 header {
   display: flex;
   justify-content: space-between;
@@ -96,21 +96,36 @@ nav {
   transition: color 0.3s;
   font-size: 1.3rem;
 }
-.frontpage_img {
-}
+
 /********Categories********/
 .categorylist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .categorylist a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  gap: 50px;
   color: white;
-  padding: 1rem;
   background-color: green;
   border-radius: 5px;
+  justify-content: end;
+  font-size: 1.5rem;
+}
+.categorylist p:hover {
+  font-size: 1.6rem;
+}
+
+.categorylist img {
+  width: 150px;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+.categorylist img:hover {
+  opacity: 1;
 }
 /********Productlist********/
 .productlist article {
