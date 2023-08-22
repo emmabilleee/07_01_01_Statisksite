@@ -1,0 +1,128 @@
+/********Generel********/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 100px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+/***Header********/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.logo {
+  display: flex;
+  font-size: 5rem;
+  color: black;
+  font-weight: bolder;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 70px;
+  height: auto;
+  margin-left: 5px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 20;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.3rem;
+}
+
+.menu a:hover {
+  color: green;
+}
+
+/********Index********/
+.menu2 {
+  display: flex;
+  list-style: none;
+  margin: 20;
+  padding: 0;
+}
+.menu2 a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.3rem;
+}
+.frontpage_img {
+}
+/********Categories********/
+.categorylist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.categorylist a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  background-color: green;
+  border-radius: 5px;
+}
+/********Productlist********/
+.productlist article {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.productlist main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+  gap: 2rem;
+}
+
+/********Product********/
