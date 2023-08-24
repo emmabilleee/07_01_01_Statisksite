@@ -112,7 +112,7 @@ nav {
   text-decoration: none;
   gap: 2rem;
   color: white;
-  background-color: green;
+  background-color: grey;
   border-radius: 5px;
   justify-content: center;
   font-size: 1.5rem;
@@ -137,7 +137,7 @@ nav {
   text-decoration: none;
   gap: 50px;
   color: white;
-  background-color: green;
+  background-color: grey;
   border-radius: 5px;
   justify-content: end;
   font-size: 1.5rem;
@@ -178,6 +178,25 @@ nav {
 .productlist img:hover {
   opacity: 0.5;
 }
+.productlist p:last-child {
+  background: red;
+  padding: 0.2rem;
+  width: 15%;
+  height: 100%;
+}
+
+.udsolgt img {
+  opacity: 0.5;
+}
+
+.productlist article.udsolgt::before {
+  content: "Udsolgt";
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 /********Product********/
 .product {
@@ -192,7 +211,7 @@ nav {
 }
 
 .purchaseBox {
-  background: green;
+  background: rgb(165, 165, 165);
   color: white;
   padding: 3rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
