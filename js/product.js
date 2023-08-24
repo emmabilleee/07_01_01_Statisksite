@@ -1,6 +1,7 @@
-// https://kea-alt-del.dk/t7/api/products/1550
+/* Den lange måde at skrive det på */
 
-/* fetch("https://kea-alt-del.dk/t7/api/products/1550").then(headersRecieved).then(dataRecieved);
+/*
+fetch("https://kea-alt-del.dk/t7/api/products/1550").then(headersRecieved).then(dataRecieved);
 
 function headersRecieved(response) {
   console.log(response);
@@ -10,6 +11,7 @@ function dataRecieved(data) {
   console.log(data);
 } */
 
+/* Den korte måde at skrive det på */
 fetch("https://kea-alt-del.dk/t7/api/products/1550")
   .then((response) => response.json())
   .then((data) => showProduct(data));
