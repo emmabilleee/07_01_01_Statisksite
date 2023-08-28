@@ -155,14 +155,15 @@ nav {
   opacity: 1;
 }
 /********Productlist********/
+
 .productlist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
 }
 .desciption {
   font-size: 1rem;
   color: grey;
+  margin-bottom: 1px;
 }
 .productlist a {
   color: black;
@@ -178,26 +179,51 @@ nav {
 .productlist img:hover {
   opacity: 0.5;
 }
-.productlist p:last-child {
-  background: red;
-  padding: 0.2rem;
-  width: 15%;
-  height: 100%;
-}
 
-.udsolgt img {
-  opacity: 0.5;
-}
-
-.productlist article.udsolgt::before {
-  content: "Udsolgt";
+.sale {
+  content: "SALE!!!!";
   position: absolute;
-  background: black;
-  color: white;
-  padding: 1rem;
+  background: white;
+  color: black;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  translate: 261px -490px;
+  line-height: 0.3rem;
+  letter-spacing: 1px;
 }
 
+.soldout {
+  content: "SOLD OUT";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.47);
+  color: white;
+  padding: 14.6rem 6.8rem;
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  z-index: 1;
+}
+.productlist .discount {
+  color: green;
+}
+.productlist .pricediscount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: fit-content;
+  margin-bottom: 1px;
+}
+
+.productlist .oldprice {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.productlist p {
+  margin-bottom: 10px;
+}
 /********Product********/
 .product {
   display: flex;
@@ -211,7 +237,7 @@ nav {
 }
 
 .purchaseBox {
-  background: rgb(165, 165, 165);
+  background: rgb(189, 189, 189);
   color: white;
   padding: 3rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -222,6 +248,7 @@ nav {
 
 .purchaseBox h2 {
   font-size: 1.3rem;
+  margin-top: 50px;
 }
 .purchaseBox p {
   font-size: 1rem;
