@@ -1,6 +1,8 @@
 /********Generel********/
+* {
+  box-sizing: border-box;
+}
 main {
-  max-width: 1200px;
   margin: 0 auto;
 }
 body {
@@ -12,6 +14,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /**********Fonts***************/
 h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -157,22 +160,18 @@ nav {
 /********Productlist********/
 
 .productlist {
+  max-width: 1000px;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+
 .desciption {
   font-size: 1rem;
   color: grey;
   margin-bottom: 1px;
 }
-.productlist a {
-  color: black;
-  text-decoration-line: underline;
-}
-.productlist a:hover {
-  color: green;
-  text-decoration-line: underline;
-}
+
 .productlist img {
   border-radius: 5px;
 }
@@ -206,6 +205,7 @@ nav {
   border-radius: 5px;
   z-index: 1;
 }
+
 .productlist .discount {
   color: green;
 }
