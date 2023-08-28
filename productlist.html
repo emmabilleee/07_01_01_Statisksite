@@ -28,22 +28,35 @@
         </nav>
     </header>
     <main>
-        <h2 class="header_productlist">Sporting goods</h2>
-        <div class="productlist"></div>
         <template id="smallProductTemplate">
             <article class="smallProduct">
                 <a href="product.html">
                     <img src="https://kea-alt-del.dk/t7/images/webp/1000/1550.webp" alt="Cat Trainer-BL Football">
                 </a>
                 <h3>Cat Trainer-BL Football</h3>
-                <p><span class="brand"></span> | <span class="subcat"></span></p>
+                <p class="description"><span class="brand"></span> | <span class="subcat"></span></p>
                 <p>
-                    <span class="price"></span>,-
+                    DKK <span class="price"></span>,-
                 </p>
+
+
+                <div class="sale">
+                    <p>SALE</p>
+                </div>
+                <div class="pricediscount">
+                    <!-- <p class="oldprice">
+                        DKK 695,-
+                    </p> -->
+                    <p class="discounted">
+                        <span class="discount"></span>% off
+                    </p>
+                </div>
             </article>
         </template>
+
         <script src="js/productlist.js"></script>
     </main>
+
 </body>
 
 </html>

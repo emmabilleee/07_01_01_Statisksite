@@ -1,10 +1,5 @@
 /********Generel********/
-* {
-  box-sizing: border-box;
-}
-main {
-  margin: 0 auto;
-}
+
 body {
   margin: 100px;
 }
@@ -13,6 +8,11 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 /**********Fonts***************/
@@ -158,29 +158,29 @@ nav {
   opacity: 1;
 }
 /********Productlist********/
-
-.productlist {
+.grid {
   max-width: 1000px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.desciption {
+.description {
   font-size: 1rem;
   color: grey;
   margin-bottom: 1px;
 }
 
-.productlist img {
+.smallProduct img {
   border-radius: 5px;
 }
-.productlist img:hover {
+.smallProduct img:hover {
   opacity: 0.5;
 }
 
-.sale {
-  content: "SALE!!!!";
+.smallProduct .sale {
+  display: none;
+  content: "SALE";
   position: absolute;
   background: white;
   color: black;
@@ -189,12 +189,16 @@ nav {
   padding-left: 40px;
   padding-right: 40px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  translate: 261px -490px;
+  translate: 287px -630px;
   line-height: 0.3rem;
   letter-spacing: 1px;
 }
 
-.soldout {
+.smallProduct.sales .sale {
+  display: block;
+}
+
+.smallProduct .soldout {
   content: "SOLD OUT";
   position: absolute;
   background: rgba(0, 0, 0, 0.47);
@@ -206,22 +210,35 @@ nav {
   z-index: 1;
 }
 
-.productlist .discount {
+.smallProduct .discount {
   color: green;
 }
-.productlist .pricediscount {
+
+.smallProduct .discounted {
+  color: green;
+}
+.smallProduct .pricediscount {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: fit-content;
   margin-bottom: 1px;
+  display: none;
 }
 
-.productlist .oldprice {
+.smallProduct.pricediscounted .pricediscount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: fit-content;
+  margin-bottom: 1px;
+  display: block;
+}
+
+.smallProduct .oldprice {
   text-decoration: line-through;
   color: grey;
 }
 
-.productlist p {
+.smallProduct p {
   margin-bottom: 10px;
 }
 /********Product********/
