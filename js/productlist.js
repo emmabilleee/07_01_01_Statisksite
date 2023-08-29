@@ -32,6 +32,7 @@ function showProduct(product) {
 
   copy.querySelector(".discount").textContent = product.discount;
 
+  copy.querySelector(".read_more").setAttribute("href", `product.html?id=${product.id}`);
   //Append
   document.querySelector("main").appendChild(copy);
 }
